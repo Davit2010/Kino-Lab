@@ -13,6 +13,9 @@ body {
   width: 75%;
   margin: 100px auto;
 }
+header{
+  position: relative;
+}
 
 .top-cont-1 {
   width: 100%;
@@ -490,6 +493,7 @@ main {
 
 .mobile-btn {
   display: none;
+  padding: 4px;
   margin-left: 8px;
 }
 .to-top {
@@ -528,6 +532,7 @@ main {
   }
 
   .mobile-btn {
+    cursor: pointer;
     display: block;
   }
 
@@ -610,4 +615,30 @@ main {
     width: 48%;
   }
 }
-
+.nav-mobil{
+  position: absolute;
+  top: 155px;
+  left: 10px;
+  width: 200px;
+  background-color: #2FAD68;
+  border: 1px solid;
+  border-radius: 4px;
+  display: none;
+}
+.nav-mobil li{
+  color: #fff;
+  margin-left: 10px;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 3px 0px;
+  transition: background-color 150ms;
+  z-index: 4;
+}
+.nav-mobil li:hover{
+  color: rgb(185, 183, 183);
+}
+.show{
+  display: block;
+}
